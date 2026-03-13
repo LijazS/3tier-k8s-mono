@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: redis
-          image: your-redis-image:latest
+          image: rnld101/3tier-nodejs:redis
           ports:
             - containerPort: 6379
           env:
