@@ -6,4 +6,4 @@ metadata:
 data:
   DB_HOST: "mysql"
   DB_NAME: "schooldb"
-  REDIS_URL: "redis://redis:6379"
+  REDIS_URL: "redis://:redispassword@redis:6379"
