@@ -4,7 +4,7 @@ metadata:
   name: redis
   namespace: 3tier-ns
 spec:
-  clusterIP: None
+  type: ClusterIP
   selector:
     app: redis
   ports:
