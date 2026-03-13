@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  namespace: 3tier-ns
+  labels:
+    app: frontend-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+     labels:
+       app: frontend
+    spec:
+      containers:
+        - name: frontend-container
+          image: rnld101/3tier-nodejs:frontend
+          ports:
+            containerPort: 80
