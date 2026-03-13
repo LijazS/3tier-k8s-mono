@@ -8,4 +8,4 @@ data:
   DB_USER: admin
   DB_PASSWORD: admin123
   DB_NAME: schooldb
-  REDIS_URL: "redis://redis:6379"
+  REDIS_URL: "redis://:redispassword@redis:6379"
